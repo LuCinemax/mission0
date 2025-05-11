@@ -1,6 +1,13 @@
 # Responsive Webpage Project
+For mission 0 I was instructed to build a responsive page using a wireframe reference for Marketing Association NZ
 
-This is a responsive webpage built using React. The layout adapts dynamically for various screen sizes, including mobile, tablet, and desktop devices.
+![Wireframe](image.png)
+
+This is the responsive webpage built using React. The layout adapts dynamically for various screen sizes, including mobile, tablet, and desktop devices.
+
+## 🔗 Built With
+
+- React
 
 ## 📱 Features
 
