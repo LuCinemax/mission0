@@ -1,0 +1,710 @@
+/* ######## GLOBAL ######## */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ######## Main CSS ######## */
+/* Cover Image */
+.coverImg {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-image: url("../assets/CoverImage2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOnly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Title Container */
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    position: relative;
+    top: 25vh;
+    left: 0;
+
+    padding: 30px 100px 30px 400px;
+    animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.titleContainer p {
+    font-size: 42px;
+    color: #f12038;
+    position: relative;
+    right: 200px;
+}
+
+.titleContainer h1 {
+    font-size: 120px;
+}
+
+/* Search Bar */
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 65vh;
+    transform: translateX(-50%);
+    animation: fadeInOnly 1.8s ease-out forwards;
+    opacity: 0;
+}
+
+.searchInput {
+    width: 30vw;
+    height: 5vh;
+    font-size: 24px;
+    padding: 0;
+}
+
+.searchButton {
+    width: 8vw;
+    height: 5vh;
+    padding: 0;
+    border-radius: 0;
+    font-size: 24px;
+}
+
+/* Service Library */
+.serviceLibrary {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    
+}
+
+.libraryGrid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px; 
+
+}
+
+.serviceCard {
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* Service Images */
+.serviceImage {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-image: url("../assets/Image1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviceImage2 {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-image: url("../assets/Image2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviceImage3 {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-image: url("../assets/Image3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviceImage4 {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-image: url("../assets/Image4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviceImage5 {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-image: url("../assets/Image5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviceImage6 {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-image: url("../assets/Image6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Service Description */
+.serviceDescription {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    width: 600px;
+    height: 180px;
+
+}
+
+.serviceDescription h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 5px 10px 5px 10px;
+    color: #f12038;
+}
+
+.serviceDescription p {
+    text-align: center;
+    font-size: 18px
+}
+
+@media (min-width: 1600px) and (max-width: 2020px) {
+
+/* Title Container */
+
+
+.libraryGrid {
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.serviceImage {
+    width: 600px;
+    height: 360px;
+}
+
+.serviceImage2 {
+    width: 600px;
+    height: 360px;
+}
+
+.serviceImage3 {
+    width: 600px;
+    height: 360px;
+}
+
+.serviceImage4 {
+    width: 600px;
+    height: 360px;
+}
+
+.serviceImage5 {
+    width: 600px;
+    height: 360px;
+}
+
+.serviceImage6 {
+    width: 600px;
+    height: 360px;
+}
+
+/* Serivice Description */
+.serviceDescription {
+    padding: 10px;
+    width: 600px;
+    height: 150px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+
+/* Title Container */
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 25vh;
+    left: 0vw;
+    padding: 20px 100px 20px 300px;
+}
+
+.titleContainer p {
+    font-size: 32px;
+    color: #f12038;
+    position: relative;
+    right: 200px;
+}
+
+.titleContainer h1 {
+    font-size: 80px;
+}
+
+/* Search Bar */
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 65vh;
+}
+
+.searchInput {
+    width: 30vw;
+    height: 5vh;
+    font-size: 24px;
+    padding: 0;
+}
+
+.searchButton {
+    width: 10vw;
+}
+
+.libraryGrid {
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.serviceImage {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage2 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage3 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage4 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage5 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage6 {
+    width: 500px;
+    height: 300px;
+}
+
+/* Serivice Description */
+.serviceDescription {
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+}
+
+.serviceDescription h1 {
+    font-size: 24px;
+    padding: 10px
+}
+
+.serviceDescription p {
+    font-size: 18px
+}
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Screen Adjustments */
+@media (min-width: 1024px) and (max-width: 1270px) {
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 25vh;
+    left: 0vw;
+    padding: 20px 100px 20px 300px;
+    overflow-x: hidden;
+}
+
+.searchBar {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 60vh;
+    transform: translateX(-50%);
+}
+
+.searchInput {
+    text-align: center;
+    width: 50vw;
+    height: 40px;
+    font-size: 22px;
+}
+
+.searchButton {
+    width: 50vw;
+    height: 50px;
+    font-size: 22px;
+}
+
+/* Service Images */
+.serviceImage {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage2 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage3 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage4 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage5 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage6 {
+    width: 400px;
+    height: 240px;
+}
+
+/* Serivice Description */
+.serviceDescription {
+    width: 400px;
+    height: 120px;
+}
+
+.serviceDescription h1 {
+    font-size: 20px;
+}
+
+.serviceDescription p {
+    font-size: 13px
+}
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Screen Adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 25vh;
+    left: 0vw;
+    padding: 20px 100px 20px 250px;
+    overflow-x: hidden;
+}
+    
+.searchBar {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 60vh;
+    transform: translateX(-50%);
+}
+
+.searchInput {
+    text-align: center;
+    width: 50vw;
+    height: 40px;
+    font-size: 22px;
+}
+
+.searchButton {
+    width: 50vw;
+    height: 50px;
+    font-size: 22px;
+}
+
+/* Service Library */
+.libraryGrid {
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+/* Service Images */
+.serviceImage {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage2 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage3 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage4 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage5 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage6 {
+    width: 500px;
+    height: 300px;
+}
+
+/* Serivice Description */
+.serviceDescription {
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+}
+
+.serviceDescription h1 {
+    font-size: 24px;
+    padding: 10px
+}
+
+.serviceDescription p {
+    font-size: 18px
+}
+}
+
+/* ======================================================================================== */
+/* ######## Tablet ######## */
+@media (max-width: 768px) {
+    
+/* Cover Image */
+.coverImg {
+    height: 90vh;
+}
+
+/* Title Container */
+.titleContainer {
+    position: relative;
+    left: 0vw;
+    padding: 0px 0px 0px 180px;
+    
+}
+
+.titleContainer p {
+    font-size: 32px;
+    position: relative;
+    right: 18vw;
+    top: 0vh;
+}
+
+.titleContainer h1 {
+    font-size: 80px;
+    position: relative;
+    right: 120px;
+}
+
+/* Search Bar */
+.searchBar {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 60vh;
+    transform: translateX(-50%);
+}
+
+.searchInput {
+    text-align: center;
+    width: 50vw;
+    height: 40px;
+    font-size: 22px;
+}
+
+.searchButton {
+    width: 50vw;
+    height: 50px;
+    font-size: 22px;
+}
+
+.libraryGrid {
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+/* Service Images */
+.serviceImage {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage2 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage3 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage4 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage5 {
+    width: 500px;
+    height: 300px;
+}
+
+.serviceImage6 {
+    width: 500px;
+    height: 300px;
+}
+
+/* Serivice Description */
+.serviceDescription {
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+}
+
+.serviceDescription h1 {
+    font-size: 24px;
+    padding: 10px
+}
+
+.serviceDescription p {
+    font-size: 18px
+}
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ######## Smartphone ######## */
+@media (max-width: 640px) {
+    
+/* Cover Image */
+.coverImg {
+    height: 90vh;
+}
+
+/* Title Container */
+.titleContainer {
+    position: relative;
+    left: 0vw;
+    padding: 20px 50px 20px 50px;
+    overflow-x: hidden;
+}
+
+.titleContainer p {
+    font-size: 32px;
+    position: relative;
+    right: 0vw;
+    top: 0vh;
+}
+
+.titleContainer h1 {
+    font-size: 80px;
+    position: relative;
+    right: 0px;
+}
+
+/* Search Bar */
+.searchBar {
+    position: absolute;
+    top: 60vh;
+}
+
+.searchInput {
+    height: 40px;
+    font-size: 22px;
+}
+
+.libraryGrid {
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+/* Service Images */
+.serviceImage {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage2 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage3 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage4 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage5 {
+    width: 400px;
+    height: 240px;
+}
+
+.serviceImage6 {
+    width: 400px;
+    height: 240px;
+}
+
+/* Serivice Description */
+.serviceDescription {
+    width: 400px;
+    height: 120px;
+}
+
+.serviceDescription h1 {
+    font-size: 20px;
+}
+
+.serviceDescription p {
+    font-size: 13px
+}
+}
